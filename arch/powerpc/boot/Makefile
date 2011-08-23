@@ -72,7 +72,7 @@ src-plat := of.c cuboot-52xx.c cuboot-824x.c cuboot-83xx.c cuboot-85xx.c holly.c
 		cuboot-ebony.c cuboot-hotfoot.c epapr.c treeboot-ebony.c \
 		prpmc2800.c \
 		ps3-head.S ps3-hvcall.S ps3.c treeboot-bamboo.c cuboot-8xx.c \
-		cuboot-pq2.c cuboot-sequoia.c treeboot-walnut.c \
+		cuboot-pq2.c cuboot-sequoia.c cuboot-roach2.c treeboot-walnut.c \
 		cuboot-bamboo.c cuboot-mpc7448hpc2.c cuboot-taishan.c \
 		fixed-head.S ep88xc.c ep405.c cuboot-c2k.c \
 		cuboot-katmai.c cuboot-rainier.c redboot-8xx.c ep8248e.c \
@@ -204,6 +204,7 @@ image-$(CONFIG_EBONY)			+= treeImage.ebony cuImage.ebony
 image-$(CONFIG_BAMBOO)			+= treeImage.bamboo cuImage.bamboo
 image-$(CONFIG_SAM440EP)		+= cuImage.sam440ep
 image-$(CONFIG_SEQUOIA)			+= cuImage.sequoia
+image-$(CONFIG_ROACH2)			+= cuImage.roach2
 image-$(CONFIG_RAINIER)			+= cuImage.rainier
 image-$(CONFIG_TAISHAN)			+= cuImage.taishan
 image-$(CONFIG_KATMAI)			+= cuImage.katmai
