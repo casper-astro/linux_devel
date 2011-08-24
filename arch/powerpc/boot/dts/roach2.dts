@@ -158,6 +158,12 @@
         interrupts = <0x5 0x1>;
         interrupt-parent = <&UIC1>;
 
+        rmmc@0,0 {
+          compatible = "kat,rmmc";
+          interrupt-parent = <&UIC0>;
+          interrupts = <0x1b 0x8>;
+        };
+
         nor_flash@0,0 {
           compatible = "amd,s29gl256n", "cfi-flash";
           bank-width = <2>;
@@ -184,7 +190,7 @@
             label = "ubootenv";
             reg = <0x07f40000 0x00040000>;
           };
-          partition@3f60000 {
+          partition@7f80000 {
             label = "uboot";
             reg = <0x07f80000 0x00080000>;
           };

@@ -81,6 +81,16 @@ config MMC_RICOH_MMC
 
 	  If unsure, say Y.
 
+config MMC_ROACH
+	tristate "ROACH MMC support  (EXPERIMENTAL)"
+	depends on PPC_OF && (ROACH || ROACH2)
+  select CRC7
+  select CRC_ITU_T
+	help
+	  This selects ROACH mmc support.
+
+	  If unsure, you shouldn't be trying to compile a kernel.
+
 config MMC_SDHCI_PLTFM
 	tristate "SDHCI platform and OF driver helper"
 	depends on MMC_SDHCI
