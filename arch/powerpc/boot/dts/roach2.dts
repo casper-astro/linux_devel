@@ -242,29 +242,39 @@
           reg = <0x68>;
         };
 
-        rtc@18 {
+        hwmon@18 {
           compatible = "maxim,max1668";
           reg = <0x18>;
         };
 
-        rtc@48 {
+        hwmon@48 {
           compatible = "maxim,max6650";
           reg = <0x48>;
         };
 
-        rtc@4b {
+        hwmon@4b {
           compatible = "maxim,max6650";
           reg = <0x4b>;
         };
 
-        rtc@1b {
+        hwmon@1b {
           compatible = "maxim,max6650";
           reg = <0x1b>;
         };
 
-        rtc@1f {
+        hwmon@1f {
           compatible = "maxim,max6650";
           reg = <0x1f>;
+        };
+
+        hwmon@50 {
+          compatible = "maxim,max16071";
+          reg = <0x50>;
+        };
+
+        hwmon@51 {
+          compatible = "maxim,max16071";
+          reg = <0x51>;
         };
       };
 
