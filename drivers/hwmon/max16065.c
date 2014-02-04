@@ -550,6 +550,8 @@ static int max16065_probe(struct i2c_client *client,
 	bool have_secondary;		/* true if chip has secondary limits */
 	bool secondary_is_max = false;	/* secondary limits reflect max */
 
+	printk(KERN_DEBUG " %s has addr: 0x%02x has name: %s", __func__, client->addr, client->name);
+
 	if (!i2c_check_functionality(adapter, I2C_FUNC_SMBUS_BYTE_DATA
 				     | I2C_FUNC_SMBUS_READ_WORD_DATA))
 		return -ENODEV;
